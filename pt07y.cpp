@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <queue>
+#include <utility>
 
 using namespace std;
 
@@ -46,7 +47,7 @@ int main() {
     }
     if (m != n - 1) res = false;
     if (res) {
-        res = bfs_check(graph, n);
+        res = bfs_check(move(graph), n);
     }
     
     if (res) 
